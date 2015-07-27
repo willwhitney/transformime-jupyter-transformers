@@ -9,6 +9,6 @@ export class StreamTransformer extends ConsoleTextTransformer {
 
     transform(data, doc) {
         // Note: data.name (stdout, stderr) should be available too
-        return super.transform(data.text, doc);
+        return super.transform(data, doc);
     }
 }
